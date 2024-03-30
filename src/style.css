@@ -6,11 +6,11 @@
 :root {
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Open Sans", sans-serif;
-  --bg-color: ;
-  --card-color: ;
-  --text-color: ;
-  --link-color: ;
-  --otherlink-color: ;
+  --bg-color: #eeeeee;
+  --card-color: #d9dad7;
+  --text-color: #1a2639;
+  --link-color: #c9356c;
+  --otherlink-color: #f48db4;
 }
 
 body {
@@ -24,6 +24,32 @@ body {
   margin: 0 auto;
 }
 
+/* Banner image */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/172/original/pexels-aleksandar-pasaric-2506923.jpg?1711803543);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 250px 0;
+  font-family: var(--heading-font-family);
+}
+
+header h1 {
+  font-size: 100px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Introduction image/card */
 .grid {
   display: grid;
   grid-gap: 50px;
@@ -42,4 +68,25 @@ body {
   width: 80%;
   padding: 30px;
   margin: 20px auto;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: var(--heading-font-family);
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
