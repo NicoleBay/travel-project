@@ -19,11 +19,6 @@ body {
   color: var(--text-color);
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 /* Banner image */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -72,12 +67,11 @@ header h2 {
   width: 80%;
   padding: 30px;
   margin: 20px auto;
+  border-radius: 15px;
 }
 
 section {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 main h2 {
@@ -196,4 +190,9 @@ main p {
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
+}
+
+.instagram-posts {
+  margin: 30px 0;
+  padding: 0 100px;
 }
