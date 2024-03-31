@@ -107,6 +107,8 @@ main p {
 
 .card {
   margin: 30px 0;
+  background: var(--card-color);
+  border-radius: 15px;
 }
 
 .card .grid {
