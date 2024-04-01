@@ -221,16 +221,33 @@ main p {
   margin: 0;
 }
 
+/* videos */
+.video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.video-grid-1-1-1 {
+  margin: 30px auto;
+  padding: 0 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1400px;
+}
+
 /* Instagram posts */
 .instagram-posts {
-  margin: 30px 0;
+  margin: 30px auto;
   padding: 0 100px;
+  max-width: 1400px;
 }
 
 /* Music */
 .music-section {
-  margin: 30px 0;
+  margin: 30px auto;
   padding: 100px;
+  max-width: 1400px;
 }
 
 .music-body {
@@ -242,10 +259,6 @@ main p {
 form {
   display: flex;
   margin-bottom: 10px;
-}
-
-.container {
-  margin: 30px auto;
 }
 
 .form-generation {
@@ -315,4 +328,50 @@ form {
   to {
     visibility: hidden;
   }
+}
+
+/* Footer */
+
+footer {
+  color: #ffffff;
+  background-image: linear-gradient(
+      rgba(68, 32, 60, 0.8),
+      rgba(68, 32, 62, 0.8)
+    ),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/403/original/masaaki-komori-iczsntduUyI-unsplash.jpg?1711983031");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 30px auto;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  line-height: 2;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer h3 {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 30px 0;
 }
