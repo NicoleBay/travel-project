@@ -66,7 +66,7 @@ header h2 {
   background: var(--card-color);
   width: 80%;
   padding: 30px;
-  margin: 20px auto;
+  margin: 30px auto;
   border-radius: 15px;
 }
 
@@ -87,6 +87,35 @@ main p {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.button {
+  font-family: var(--default-font-family);
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 300ms ease;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
 /* attractions */
