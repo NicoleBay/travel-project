@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo City</title>
   </head>
@@ -1137,7 +1139,38 @@
             </div>
           </div>
         </section>
+
+        <section>
+          <h2 class="text-center heading-text">Haiku</h2>
+          <h3 class="text-center sub-heading">AI Generator</h3>
+          <a name="haiku"></a>
+          <div class="form-container">
+            <div class="form-generation">
+              <form action="" id="generate-form">
+                <input
+                  type="text"
+                  placeholder="Enter your topic for a Haiku"
+                  autofocus
+                  required
+                  autocomplete="off"
+                  class="search-field"
+                  id="search-field"
+                />
+                <input type="submit" class="submit-button" value="Generate" />
+              </form>
+              <div class="hint">
+                i.e: <em>cat, love, nature, reflection...</em>
+              </div>
+            </div>
+
+            <div
+              class="generated-response hidden"
+              id="generated-response"
+            ></div>
+          </div>
+        </section>
       </div>
     </main>
+    <script src="src/index.js"></script>
   </body>
 </html>
