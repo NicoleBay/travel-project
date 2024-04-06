@@ -14,8 +14,6 @@
   --button-hover: #000000;
   --button-hover-text: #ffffff;
   --text-color: #1a2639;
-  --link-color: #3a091e;
-  --link-hover: #808080;
   --haiku-bg: #f9ecec;
   --haiku-button: #ffcbcb;
   --haiku-button-hover: #ffb5b5;
@@ -34,7 +32,7 @@ header {
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding: 200px 0;
+  padding: 280px 0;
   font-family: var(--heading-font-family);
 }
 
@@ -270,6 +268,7 @@ form {
 }
 
 .form-container {
+  font-family: var(--haiku-font-family);
   margin: 30px auto;
   max-width: 50%;
   background-color: var(--bg-color);
@@ -368,6 +367,11 @@ footer li {
 
 footer a {
   color: #ffffff;
+  font-size: 16px;
+}
+
+footer a:hover {
+  color: #ffcbcb;
   font-size: 16px;
 }
 
