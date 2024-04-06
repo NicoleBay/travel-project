@@ -6,11 +6,19 @@
 :root {
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Open Sans", sans-serif;
+  --haiku-font-family: "Josefin Sans", sans-serif;
   --bg-color: #eeeeee;
   --card-color: #d9dad7;
+  --button-color: #ffffff;
+  --button-text: #000000;
+  --button-hover: #000000;
+  --button-hover-text: #ffffff;
   --text-color: #1a2639;
-  --link-color: #c9356c;
-  --hover-color: #f48db4;
+  --link-color: #3a091e;
+  --link-hover: #808080;
+  --haiku-bg: #f9ecec;
+  --haiku-button: #ffcbcb;
+  --haiku-button-hover: #ffb5b5;
 }
 
 body {
@@ -19,7 +27,6 @@ body {
   color: var(--text-color);
 }
 
-/* Banner image */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/172/original/pexels-aleksandar-pasaric-2506923.jpg?1711803543);
@@ -27,7 +34,7 @@ header {
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding: 430px 0;
+  padding: 200px 0;
   font-family: var(--heading-font-family);
 }
 
@@ -44,62 +51,17 @@ header h2 {
   margin: 0;
 }
 
-.text-center {
-  text-align: center;
-}
-
-/* Introduction image/card */
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.img-responsive {
-  width: 100%;
-}
-
-.grid-1-1 {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-main {
-  background: var(--card-color);
-  width: 80%;
-  padding: 30px;
-  margin: 30px auto;
-  border-radius: 15px;
-}
-
-section {
-  max-width: 100%;
-}
-
-main h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
-  font-family: var(--heading-font-family);
-}
-
-main p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.button-container {
+header .button-container {
   display: flex;
   justify-content: center;
   margin-top: 150px;
 }
 
-.button {
+header .button {
   font-family: var(--default-font-family);
   text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--button-text);
+  background-color: var(--button-color);
   border: 2px solid #000000;
   border-radius: 15px;
   font-weight: 700;
@@ -112,20 +74,87 @@ main p {
   transition: background-color 300ms ease;
 }
 
-.button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #000000;
+header .button:hover {
+  background-color: var(--button-hover);
+  color: var(--button-hover-text);
+  border-color: #ffffff;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* Grids/layout */
+
+section {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-1-1 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-1-1-1 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-main {
+  background: var(--card-color);
+  width: 80%;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.heading-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: var(--heading-font-family);
+}
+
+.sub-heading {
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  margin: 40px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /* attractions */
 
-.secondary {
+section .secondary {
   padding: 100px;
-}
-
-.grid-1-1-1 {
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -148,52 +177,21 @@ main p {
   height: 100%;
 }
 
-.card-header .grid-1-1 {
-  grid-template-columns: 1fr 1fr;
-}
-
 .card-body {
-  padding: 30px;
+  padding: 20px;
 }
 
 .card-body h4 {
   text-transform: uppercase;
-}
-
-.card-footer {
-  padding: 0 20px 20px;
-}
-
-.btn {
-  display: block;
-  border-radius: 25px;
-  color: #ffffff;
-  background-color: var(--link-color);
-  font-weight: 700;
   font-size: 18px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  color: var(--hover-color);
-  background-color: #ffffff;
-}
-
-.card h4 {
-  font-weight: 700;
-  font-size: 20px;
   line-height: 1.5;
   margin: 0;
 }
 
-.card h5 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 19.5px;
+.card-body h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -204,28 +202,38 @@ main p {
   opacity: 0.8;
 }
 
-.heading-text {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  opacity: 0.4;
-  text-transform: uppercase;
-  margin: 0;
+.card-footer {
+  padding: 0 20px 20px;
 }
 
-.sub-heading {
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
+.btn {
+  display: block;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  color: var(--button-text);
+  background-color: var(--button-color);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 14px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+  color: var(--button-hover-text);
+  border-color: #ffffff;
 }
 
 /* videos */
+
 .video {
   aspect-ratio: 16/9;
   width: 100%;
-  margin-bottom: 100px;
 }
 
 .video-grid-1-1-1 {
@@ -233,25 +241,18 @@ main p {
   padding: 0 30px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  max-width: 1400px;
 }
 
 /* Instagram posts */
 .instagram-posts {
-  margin: 30px auto;
+  margin: 30px 0;
   padding: 0 100px;
-  max-width: 1400px;
 }
 
 /* Music */
-.music-section {
-  margin: 30px auto;
-  padding: 100px;
-  max-width: 1400px;
-}
 
 .music-body {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 /* Haiku */
@@ -262,7 +263,6 @@ form {
 }
 
 .form-generation {
-  background-color: var(--bg-color);
   padding: 30px;
   border-radius: 15px;
   display: flex;
@@ -270,16 +270,21 @@ form {
 }
 
 .form-container {
-  margin: 60px auto;
+  margin: 30px auto;
   max-width: 50%;
+  background-color: var(--bg-color);
+  border: 1px solid var(--haiku-button);
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 0 30px;
 }
 
 .search-field {
   color: var(--text-color);
   padding: 16px;
-  border: 1px solid var(--card-color);
+  border: 1px solid var(--haiku-bg);
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 50px;
   line-height: 20px;
 }
@@ -287,17 +292,21 @@ form {
 .submit-button {
   margin-left: 10px;
   font-weight: 700;
-  background-color: var(--card-color);
+  background-color: var(--haiku-button);
   color: var(--text-color);
   border: none;
   border-radius: 50px;
   padding: 14px 24px;
-  font-size: 20px;
+  font-size: 18px;
   width: 40%;
 }
 
+.submit-button:hover {
+  background-color: var(--haiku-button-hover);
+}
+
 .hint {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--text-color);
   opacity: 0.8;
 }
@@ -307,7 +316,7 @@ form {
   font-size: 20px;
   padding: 10px;
   line-height: 1.5;
-  border-left: 3px solid var(--card-color);
+  border-left: 3px solid var(--haiku-button-hover);
   background-color: var(--bg-color);
 }
 
@@ -331,21 +340,20 @@ form {
 }
 
 /* Footer */
-
 footer {
   color: #ffffff;
   background-image: linear-gradient(
-      rgba(68, 32, 60, 0.8),
-      rgba(68, 32, 62, 0.8)
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
     ),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/403/original/masaaki-komori-iczsntduUyI-unsplash.jpg?1711983031");
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/132/original/pexels-pixabay-356830.jpg?1712423070");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 10px 100px;
+  margin-top: 60px;
 }
 
 .footer-content {
-  max-width: 1400px;
   margin: 30px auto;
 }
 
@@ -360,18 +368,18 @@ footer li {
 
 footer a {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 footer p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 footer h3 {
   font-size: 25px;
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 20px 0;
 }

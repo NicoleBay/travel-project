@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -15,22 +15,22 @@
     <title>Tokyo City</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Tokyo</h1>
-      <h2>( Tōkyō-to ) 東京都</h2>
-      <div class="button-container">
-        <a class="button" href="#tokyo">History</a>
-        <a class="button" href="#attractions">Attractions</a>
-        <a class="button" href="#videos">Videos</a>
-        <a class="button" href="#instagram">Photos</a>
-        <a class="button" href="#music">Music</a>
-        <a class="button" href="#haiku">AI Haiku</a>
-      </div>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome to Tokyo</h1>
+        <h2>( Tōkyō-to ) 東京都</h2>
+        <div class="button-container">
+          <a class="button" href="#tokyo">History</a>
+          <a class="button" href="#attractions">Attractions</a>
+          <a class="button" href="#videos">Videos</a>
+          <a class="button" href="#instagram">Photos</a>
+          <a class="button" href="#music">Music</a>
+          <a class="button" href="#haiku">AI Haiku</a>
+        </div>
+      </header>
 
-    <main>
-      <a name="tokyo"></a>
-      <div class="intro">
+      <main>
+        <a name="tokyo"></a>
         <section class="grid grid-main grid-1-1">
           <div>
             <img
@@ -66,6 +66,7 @@
             </p>
           </div>
         </section>
+        <br />
 
         <!-- attractions start -->
 
@@ -231,8 +232,10 @@
             <!-- Attraction end -->
           </div>
         </section>
-
+        <br />
+        <hr />
         <!-- Videos -->
+
         <section>
           <a name="videos"></a>
 
@@ -270,8 +273,10 @@
             ></iframe>
           </div>
         </section>
-
+        <br />
+        <hr />
         <!-- Instagram start -->
+
         <section>
           <a name="instagram"></a>
           <h2 class="text-center heading-text">Instagram</h2>
@@ -1134,13 +1139,15 @@
             </div>
           </div>
         </section>
-
+        <br />
+        <hr />
         <!-- Spotify -->
+
         <section class="music-section">
           <a name="music"></a>
           <h2 class="text-center heading-text">Music</h2>
           <h3 class="text-center sub-heading">To get you in the mood</h3>
-
+          <br />
           <div class="grid grid-1-1-1">
             <div class="music-body">
               <iframe
@@ -1180,7 +1187,8 @@
             </div>
           </div>
         </section>
-
+        <br />
+        <hr />
         <section>
           <h2 class="text-center heading-text">Haiku</h2>
           <h3 class="text-center sub-heading">AI Generator</h3>
@@ -1210,57 +1218,59 @@
             ></div>
           </div>
         </section>
-      </div>
-    </main>
-
-    <footer>
-      <section class="grid grid-1-1 footer-content">
-        <div>
-          <h3>More about Tokyo</h3>
-          <ul>
-            <li>
+      </main>
+      <br />
+      <footer>
+        <section class="grid grid-1-1 footer-content">
+          <div>
+            <h3>More about Tokyo</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.gotokyo.org/en/plan/index.html"
+                  target="_blank"
+                  >Plan Your Trip</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gotokyo.org/en/destinations/index.html"
+                  target="_blank"
+                  >Tokyo Area Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.gotokyo.org/en/see-and-do/index.html"
+                  target="_blank"
+                  >Things to do</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>About this website</h3>
+            <p>
+              This project was coded by
               <a
-                href="https://www.gotokyo.org/en/plan/index.html"
+                href="https://www.linkedin.com/in/nicole-baylis/"
                 target="_blank"
-                >Plan Your Trip</a
-              >
-            </li>
-            <li>
+                >Nicole Baylis</a
+              >, and is open-sourced on
               <a
-                href="https://www.gotokyo.org/en/destinations/index.html"
+                href="https://github.com/NicoleBay/travel-project"
                 target="_blank"
-                >Tokyo Area Guide</a
+                >GitHub</a
               >
-            </li>
-            <li>
-              <a
-                href="https://www.gotokyo.org/en/see-and-do/index.html"
-                target="_blank"
-                >Things to do</a
+              and hosted on
+              <a href="https://tokyo-travel.netlify.app/" target="_blank"
+                >Netlify</a
               >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>About this website</h3>
-          <p>
-            This project was coded by
-            <a href="https://www.linkedin.com/in/nicole-baylis/" target="_blank"
-              >Nicole Baylis</a
-            >, and is open-sourced on
-            <a
-              href="https://github.com/NicoleBay/travel-project"
-              target="_blank"
-              >GitHub</a
-            >
-            and hosted on
-            <a href="https://tokyo-travel.netlify.app/" target="_blank"
-              >Netlify</a
-            >
-          </p>
-        </div>
-      </section>
-    </footer>
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
