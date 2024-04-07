@@ -30,6 +30,7 @@ header {
     url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/172/original/pexels-aleksandar-pasaric-2506923.jpg?1711803543);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #ffffff;
   text-align: center;
   padding: 280px 0;
@@ -153,6 +154,7 @@ hr {
 
 section .secondary {
   padding: 100px;
+  width: 90%;
 }
 
 .card {
@@ -231,7 +233,8 @@ section .secondary {
 
 .video {
   aspect-ratio: 16/9;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .video-grid-1-1-1 {
@@ -250,7 +253,8 @@ section .secondary {
 /* Music */
 
 .music-body {
-  margin: 30px 0;
+  width: 90%;
+  margin: 30px auto;
 }
 
 /* Haiku */
@@ -352,6 +356,7 @@ footer {
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/132/original/pexels-pixabay-356830.jpg?1712423070");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 10px 100px;
   margin-top: 60px;
 }
@@ -423,7 +428,7 @@ footer h3 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   header {
     padding: 150px 0;
   }
@@ -435,7 +440,6 @@ footer h3 {
   header h2 {
     font-size: 30px;
   }
-
   header .button-container {
     flex-wrap: wrap;
     margin-top: 80px;
@@ -453,8 +457,7 @@ footer h3 {
 
   .container {
     width: 90%;
-    max-width: none;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .grid {
@@ -476,7 +479,8 @@ footer h3 {
   }
 
   .instagram-container,
-  .hr-hidden {
+  .hr-hidden,
+  .intragram-button {
     display: none;
   }
 
