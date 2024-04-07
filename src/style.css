@@ -257,7 +257,10 @@ section .secondary {
 
 form {
   display: flex;
-  margin-bottom: 10px;
+}
+
+.haiku-container {
+  margin: 100px auto;
 }
 
 .form-generation {
@@ -305,6 +308,7 @@ form {
 }
 
 .hint {
+  margin-top: 10px;
   font-size: 14px;
   color: var(--text-color);
   opacity: 0.8;

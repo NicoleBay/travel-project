@@ -9,8 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo City</title>
   </head>
@@ -24,7 +22,7 @@
         <a class="button" href="#videos">Videos</a>
         <a class="button" href="#instagram">Photos</a>
         <a class="button" href="#music">Music</a>
-        <a class="button" href="#haiku">AI Haiku</a>
+        <a class="button" href="/haiku.html" target="_blank">AI Haiku</a>
       </div>
     </header>
     <div class="container">
@@ -1180,36 +1178,6 @@
             </div>
           </div>
         </section>
-        <br />
-        <hr />
-        <section>
-          <h2 class="text-center heading-text" id="haiku">Haiku</h2>
-          <h3 class="text-center sub-heading">AI Generator</h3>
-          <div class="form-container">
-            <div class="form-generation">
-              <form action="" id="generate-form">
-                <input
-                  type="text"
-                  placeholder="Enter your topic for a Haiku"
-                  autofocus
-                  required
-                  autocomplete="off"
-                  class="search-field"
-                  id="search-field"
-                />
-                <input type="submit" class="submit-button" value="Generate" />
-              </form>
-              <div class="hint">
-                i.e: <em>cat, love, nature, reflection...</em>
-              </div>
-            </div>
-
-            <div
-              class="generated-response hidden"
-              id="generated-response"
-            ></div>
-          </div>
-        </section>
       </main>
     </div>
     <br />
@@ -1261,7 +1229,5 @@
         </div>
       </section>
     </footer>
-
-    <script src="src/index.js"></script>
   </body>
 </html>
