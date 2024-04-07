@@ -391,3 +391,96 @@ footer h3 {
   line-height: 1.5;
   margin: 20px 0;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 650px) {
+  .form-container {
+    max-width: 70%;
+  }
+
+  .generated-response {
+    font-size: 16px;
+  }
+
+  .form-generation form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-field,
+  .submit-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .submit-button,
+  .hint {
+    margin-left: 0;
+  }
+
+  .instruction {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 150px 0;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+
+  header .button-container {
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  header .button {
+    margin: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  .grid {
+    grid-gap: 15px;
+  }
+
+  .grid-1-1,
+  .grid-1-1-1,
+  .video-grid-1-1-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .music-body {
+    width: 100%;
+  }
+
+  .instagram-container,
+  .hr-hidden {
+    display: none;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+}
